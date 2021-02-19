@@ -12,10 +12,10 @@ pool:
 steps:
 - task: oc-cmd@2
   inputs:
-    connectionType: 'OpenShift Connection Service'
+    connectionType: 'Openshift'
     cmd: 'oc get nodes'
 - task: oc-cmd@2
   inputs:
-    connectionType: 'OpenShift Connection Service'
+    connectionType: 'Openshift'
     version: 'oc --version'
     cmd: 'oc get pods'
